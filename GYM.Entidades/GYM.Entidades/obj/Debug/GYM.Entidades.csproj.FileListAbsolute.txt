@@ -1,0 +1,3 @@
+C:\Users\limoli\Source\Repos\GYM-Web\GYM.Entidades\GYM.Entidades\obj\Debug\GYM.Entidades.csprojResolveAssemblyReference.cache
+C:\Users\limoli\Source\Repos\GYM-Web\GYM.Entidades\GYM.Entidades\obj\Debug\GYM.Entidades.Properties.Resources.resources
+C:\Users\limoli\Source\Repos\GYM-Web\GYM.Entidades\GYM.Entidades\obj\Debug\GYM.Entidades.csproj.GenerateResource.Cache
