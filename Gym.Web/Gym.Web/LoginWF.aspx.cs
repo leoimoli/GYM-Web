@@ -16,11 +16,11 @@ namespace Gym.Web
         {
 
         }
-        private void btnLogin_Click(object sender, EventArgs e)
+        public void btnLogin_Click(object sender, EventArgs e)
         {
             Usuario _usuario = new Usuario();
-            _usuario.Dni = "33222111";
-            _usuario.Contraseña = "AAAA";
+            _usuario.Dni = txtDni.Text;
+            _usuario.Contraseña = txtClave.Text;
             List<Usuario> lista = new List<Usuario>();
             lista = UsuarioNeg.LoginUsuario(_usuario);
             if (lista.Count > 0)
@@ -30,28 +30,17 @@ namespace Gym.Web
                 bool Exito = UsuarioNeg.ActualizarUltimaConexion(_usuario);
                 if (Exito == true)
                 {
-                    const string message2 = "Login Exitoso.";
-                    const string caption2 = "Éxito";
-                    //var result2 = MessageBox.Show(message2, caption2,
-                    //                             MessageBoxButtons.OK,
-                    //                             MessageBoxIcon.Asterisk);
+                    HttpContext.Current.Session["loginUsuario"] = lista.First();
+                    Response.Redirect("DefaultWF.aspx");
                 }
                 else
                 {
-                    const string message2 = "No se pudo actualizar la ultima conexión.";
-                    const string caption2 = "Éxito";
-                    //var result2 = MessageBox.Show(message2, caption2,
-                    //                             MessageBoxButtons.OK,
-                    //                             MessageBoxIcon.Asterisk);
+
                 }
             }
             else
             {
-                const string message2 = "Usuario o clave incorrectas.";
-                const string caption2 = "Éxito";
-                //var result2 = MessageBox.Show(message2, caption2,
-                //                             MessageBoxButtons.OK,
-                //                             MessageBoxIcon.Asterisk);
+                throw new Exception("El usuario ingresado/contraseña incorrecta.");
             }
         }
     }
