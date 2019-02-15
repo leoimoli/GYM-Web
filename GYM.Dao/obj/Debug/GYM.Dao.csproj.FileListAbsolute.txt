@@ -1,3 +1,0 @@
-C:\Users\limoli\Source\Repos\GYM-Web\GYM.Dao\obj\Debug\GYM.Dao.csprojResolveAssemblyReference.cache
-C:\Users\limoli\Source\Repos\GYM-Web\GYM.Dao\obj\Debug\GYM.Dao.Properties.Resources.resources
-C:\Users\limoli\Source\Repos\GYM-Web\GYM.Dao\obj\Debug\GYM.Dao.csproj.GenerateResource.Cache

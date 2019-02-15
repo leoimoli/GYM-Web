@@ -1,3 +1,0 @@
-C:\Users\limoli\Source\Repos\GYM-Web\GYM.Negocio\obj\Debug\GYM.Negocio.csprojResolveAssemblyReference.cache
-C:\Users\limoli\Source\Repos\GYM-Web\GYM.Negocio\obj\Debug\GYM.Negocio.Properties.Resources.resources
-C:\Users\limoli\Source\Repos\GYM-Web\GYM.Negocio\obj\Debug\GYM.Negocio.csproj.GenerateResource.Cache
