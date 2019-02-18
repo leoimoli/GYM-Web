@@ -94,11 +94,14 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="ConsultarUsuarioWF.aspx" />
     <Content Include="DefaultWF.aspx" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Prueba.aspx" />
+    <Content Include="Site.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -113,6 +116,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsultarUsuarioWF.aspx.cs">
+      <DependentUpon>ConsultarUsuarioWF.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ConsultarUsuarioWF.aspx.designer.cs">
+      <DependentUpon>ConsultarUsuarioWF.aspx</DependentUpon>
+    </Compile>
     <Compile Include="DefaultWF.aspx.cs">
       <DependentUpon>DefaultWF.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -128,6 +138,20 @@
       <DependentUpon>LoginWF.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prueba.aspx.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Prueba.aspx.designer.cs">
+      <DependentUpon>Prueba.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Site.Master.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Site.Master.designer.cs">
+      <DependentUpon>Site.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Gym.Entidades\Gym.Entidades.csproj">

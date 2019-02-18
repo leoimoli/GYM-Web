@@ -10,6 +10,6 @@
 namespace Gym.Web {
     
     
-    public partial class DefaultWF {
+    public partial class Prueba {
     }
 }
